@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Expense Tracker</title>
+
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <h1>Expense Tracker</h1>
+
+        <section class="summary">
+
+            <div class="balance">
+                <h2>Total Balance</h2>
+                <p id="balance">$0.00</p>
+            </div>
+
+            <div class="summary-items">
+
+                <div class="income">
+                    <h3>Total Income</h3>
+                    <p id="income">$0.00</p>
+                </div>
+
+                <div class="expenses">
+                    <h3>Total Expenses</h3>
+                    <p id="expenses">$0.00</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="transaction-form">
+
+            <h2>Add Transaction</h2>
+
+            <form id="form">
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <input
+                        type="text"
+                        id="description"
+                        placeholder="e.g. Salary"
+                        required
+                    >
+                </div>
+
+                <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input
+                        type="number"
+                        id="amount"
+                        placeholder="e.g. 500"
+                        step="0.01"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Add Transaction</button>
+
+            </form>
+
+        </section>
+
+        <section class="transactions">
+
+            <h2>Transaction History</h2>
+
+            <ul id="transaction-list"></ul>
+
+        </section>
+
+    </main>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
