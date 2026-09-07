@@ -1,190 +1,188 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #f4f4f4;
-    color: #222;
-    min-height: 100vh;
-    padding: 40px 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+  color: #222;
+  min-height: 100vh;
+  padding: 40px 20px;
 }
 
 .container {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 30px;
+  text-align: center;
+  margin-bottom: 30px;
 }
 
 h2 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 /* Summary */
 
 .summary {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 20px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .balance {
-    text-align: center;
-    margin-bottom: 25px;
+  text-align: center;
+  margin-bottom: 25px;
 }
 
 .balance h2 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 #balance {
-    font-size: 32px;
-    font-weight: bold;
+  font-size: 32px;
+  font-weight: bold;
 }
 
 .summary-items {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .income,
 .expenses {
-    flex: 1;
-    padding: 20px;
-    border-radius: 8px;
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
 }
 
 .income {
-    background: #e8f8ee;
+  background: #e8f8ee;
 }
 
 .expenses {
-    background: #fdeaea;
+  background: #fdeaea;
 }
 
 .income p {
-    color: green;
+  color: green;
 }
 
 .expenses p {
-    color: red;
+  color: red;
 }
 
 /* Form */
 
 .transaction-form {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 20px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .form-group label {
-    display: block;
-    margin-bottom: 6px;
-    font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
 }
 
 .form-group input {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 16px;
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
 }
 
 button {
-    width: 100%;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    background: #222;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 button:hover {
-    background: #444;
+  background: #444;
 }
 
 /* Transactions */
 
 .transactions {
-    background: white;
-    padding: 25px;
-    border-radius: 12px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
 }
 
 #transaction-list {
-    list-style: none;
+  list-style: none;
 }
 
 .transaction {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px;
-    margin-bottom: 10px;
-    border-radius: 6px;
-    border-right: 5px solid;
-    background: #f8f8f8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border-right: 5px solid;
+  background: #f8f8f8;
 }
 
 .transaction.income {
-    border-color: green;
+  border-color: green;
 }
 
 .transaction.expense {
-    border-color: red;
+  border-color: red;
 }
 
 .transaction-info {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 .transaction-amount {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .delete-btn {
-    width: auto;
-    padding: 8px 12px;
-    background: #e74c3c;
+  width: auto;
+  padding: 8px 12px;
+  background: #e74c3c;
 }
 
 .delete-btn:hover {
-    background: #c0392b;
+  background: #c0392b;
 }
 
 /* Mobile */
 
 @media (max-width: 600px) {
+  body {
+    padding: 20px 10px;
+  }
 
-    body {
-        padding: 20px 10px;
-    }
+  .summary-items {
+    flex-direction: column;
+  }
 
-    .summary-items {
-        flex-direction: column;
-    }
-
-    .transaction {
-        gap: 10px;
-    }
-
+  .transaction {
+    gap: 10px;
+  }
 }
